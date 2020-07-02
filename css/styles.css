@@ -145,10 +145,11 @@ strong {
 small {
   font-size: 80%;
 }
+
 smaller {
   font-size: 60%;
-  font-weight: 400;
 }
+
 sub,
 sup {
   position: relative;
