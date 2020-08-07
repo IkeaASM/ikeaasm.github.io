@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+F<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -79,9 +79,15 @@
 
         <!-- Teaser -->
       </br>
-        <div class="container">
-          <img class="img-fluid" src="assets/img/teaser.png" alt="" />
-        </div>
+
+            <div class="container">
+              <!-- <img class="img-fluid" src="assets/img/teaser.png" alt="" /> -->
+              <video controls playsinline autoplay muted loop style="display: block; width:60%; margin: 0 auto;">
+                  <source src="assets/img/Ikea_dataset_teaser_vid.webm" type="video/webm">
+                  Sorry, your browser doesn't support embedded videos.
+              </video>
+            </div>
+
         <!-- TODO add teaser video after  -->
         <!-- Introduction Section-->
         <section class="page-section" id="intro">
@@ -370,7 +376,7 @@
         <!-- </section> -->
 
         <!-- News Section-->
-        <section class="page-section portfolio" id="news">
+        <section class="page-section" id="news">
             <div class="container">
               <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">News</h2>
               <p>
@@ -378,6 +384,34 @@
                   <li>2.7.2020: Website is live</li>
                 </ul>
               </p>
+            </div>
+        </section>
+        <!-- acknowledgment Section-->
+        <section class="page-section mb-0" id="acknowledgement">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">acknowledgements</h2>
+                 <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fa fa-gift"></i></div>
+                    <div class="divider-custom-line"></div>
+                 </div>
+                <div class="row">
+                    <div class="ml-auto"><p class="lead">
+                        This work was supported by the Australian Centre for Robotic Vision (ACRV).
+                    We would like to also thank Dr. Lars Petersson from Data61/CSIRO for helpful discussions and for
+                    providing additional compute resources for this project.
+                    </br>
+                    For the full list of contributors click on the "Thank you!" button.
+                    </p>
+                    </div>
+                </div>
+                <div class="portfolio-item text-center mt-4" data-toggle="modal" data-target="#portfolioModal4">
+                    <p class="btn btn-xl btn-outline-blue">
+                        <i class="fas fa-download mr-2"></i>
+                        Thank you!
+                    </p>
+                 </div>
+
             </div>
         </section>
         <!-- Footer-->
@@ -539,7 +573,48 @@
                 </div>
             </div>
         </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Acknowledgement</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
 
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        We thank the assemblers and annotators who took part in the collection of this dataset:
+
+Jiaying Yang, YonHon Ng, Carol Taylor, Shihao Jiang, Ziang Cheng, Wei Mao, Yujiao Shi, Tao Hu, Sadegh Aliakbarian, Alex Martin, Zheyuan (David) Liu,
+Miaomiao Li, Richard Hartley, Dongxu Li, Gerard Kennedy, zhenbo song, Liang Zheng, Samira Kaviani, Yan Zhang, Hang Yuan, Zheyu Zhuang, Jing Zhang,
+Qi Zhang, Lei Wang, Thalaiyasingam Ajanthan, Soumava Roy, Zhixun Li, Frederic Zhang, Kaihao Zhang, HongGuang zhang, Yicong Hong, Zhiwei Xu,
+Jun Zhang, Chi Ben, Chamin Hewa Koneputugodage, Songtuan Lin, Anna Ben-Shabat, Hana Gould, Bronte Gould, Ariella Gould, Shaked Ben Shabat, Wayne Chen, Heming Du,
+Sameera Ramasinghe, Pieter van goor, Cedric scheerlink, Mina Henein.
+
+                                   </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
